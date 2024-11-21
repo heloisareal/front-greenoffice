@@ -25,7 +25,7 @@
     <!-- Menu de Navegação Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
         <div class="container-fluid">
-            <img src="./images/home/logo.svg" alt="Logo da Solução, mão segurando uma planta em animação">
+            <img src="./images/home/logo.svg" alt="Logo da Solução, mão segurando uma planta">
             <a class="navbar-brand" href="#">GreenOffice</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -43,15 +43,14 @@
         </div>
     </nav>
 
-    <section class="hero-section">
+    <section class="hero-section" aria-label="Imagem de fundo de um escritório claro, com o texto no centro descrevendo brevemente o projeto e o objetivo principal">
         <div
             class="container text-center text-white d-flex flex-column justify-content-center align-items-center h-100">
             <h1 class="hero-title">
                 <span class="d-block mt-2">CONFORTO SAUDÁVEL</span>
                 <span class="d-block mt-2">ENERGIA SUSTENTÁVEL</span>
             </h1>
-            <p class="hero-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore assumenda quo
-                quod!</p>
+            <p class="hero-text mb-0">Uma solução inovadora e eficiente para otimizar o uso de energia e reduzir o desperdício nos ambientes corporativos.</p>
             <a href="#problema" class="btn btn-success mt-4 hero-button">
                 Saiba Mais <i class="bi bi-arrow-down-circle"></i>
             </a>
@@ -64,26 +63,24 @@
             <div class="row w-100">
                 <h2 class="text-center text-success hero-subtitle w-100">O Desafio da Crise Energética</h2>
                 <p class="hero-conteudo text-justify mt-3 w-100">
-                    A crise energética global é impulsionada pelo esgotamento dos combustíveis fósseis e pelas altas
-                    emissões de poluentes, agravando as mudanças climáticas. O modelo atual de consumo não é
-                    sustentável, afetando o meio ambiente, a economia e a sociedade.
+                    O desafio da crise energética reflete o crescente consumo de energia global, a escassez de recursos renováveis e os impactos ambientais causados pelo uso de combustíveis fósseis. Isso resulta em custos elevados, aumento das emissões de carbono e a necessidade urgente de soluções sustentáveis. GreenOffice aborda esse problema ao promover eficiência energética e práticas sustentáveis no ambiente corporativo.
                 </p>
                 <div class="row mt-4 w-100">
                     <!-- Coluna para a imagem -->
                     <div class="col-md-6">
-                        <img src="/images/grafico/grafico.jpg" alt="Poluição" class="img-fluid">
+                        <img src="/images/grafico/grafico.jpg" alt="Gráfico em barras que mostra o consumo de energia no Brasil por região" class="img-fluid">
                     </div>
                     <!-- Coluna para a lista e descrição -->
                     <div class="col-md-6">
-                        <h5>Descrição do Gráfico</h5>
+                        <h5>Consumo de Energia Elétrica por Região no Brasil</h5>
                         <ul>
-                            <li>Exemplo 1: Impacto do uso de combustíveis fósseis na poluição.</li>
-                            <li>Exemplo 2: Crescimento das emissões de gases do efeito estufa.</li>
-                            <li>Exemplo 3: Redução da energia renovável disponível no mercado.</li>
+                            <li>Região Sudeste: Reflete a maior densidade de escritórios e empresas.</li>
+                            <li>Sul e Nordeste: Apresentam oportunidades para otimizar o uso de energia em escritórios. </li>
+                            <li>Eficiência: Escritórios podem se destacar com soluções sustentáveis.</li>
                         </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas dicta blanditiis eligendi.
-                            Ut qui delectus soluta ad dicta quia velit modi mollitia aperiam veritatis alias dolor
-                            provident, necessitatibus esse eum?</p>
+                        <p>
+                            O gráfico revela que o Sudeste lidera o consumo de energia, com o Sul e Nordeste em seguida. Nossa solução, GreenOffice, visa otimizar o consumo nos escritórios, especialmente nas regiões de maior demanda.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -94,7 +91,7 @@
     <!-- Seção: Transição Energética -->
     <section id="transicao" class="p-5 bg-white">
         <div class="container">
-            <h2 class="text-center text-success">A Importância da Transição Energética</h2>
+            <h2 class="text-center text-success hero-subtitle">A Importância da Transição Energética</h2>
             <p class="mt-3 text-justify">
                 A transição para fontes renováveis, como solar, eólica e biomassa, é crucial para a redução de emissões
                 de gases de efeito estufa e a independência energética. Empresas que adotam modelos sustentáveis geram
@@ -104,156 +101,201 @@
                 <!-- Card 1 - Energia Solar -->
                 <div class="col-md-4 col-12 mb-4 text-center">
                     <div class="card">
-                        <img src="images/energia/solar.jpg" alt="Energia Solar" class="card-img-top img-fluid">
+                        <img src="images/energia/solar.jpg" alt="Energia Solar" class="card-img-top img-fluid" alt="Homem branco instalando um painel de energia solar">
                         <div class="card-body">
                             <h4 class="card-title">Energia Solar</h4>
-                            <p class="card-text">A energia solar é uma fonte renovável que aproveita a luz do sol para
-                                gerar eletricidade. É uma solução sustentável e eficiente.</p>
-                            <a href="#" class="btn btn-success">Saiba Mais</a>
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#solarModal">Saiba Mais</button>
                         </div>
                     </div>
                 </div>
-
+    
                 <!-- Card 2 - Energia Eólica -->
                 <div class="col-md-4 col-12 mb-4 text-center">
                     <div class="card">
-                        <img src="images/energia/eolica.jpg" alt="Energia Eólica" class="card-img-top img-fluid">
+                        <img src="images/energia/eolica.jpg" alt="Energia Eólica" class="card-img-top img-fluid" alt="Imagem de aerogerador no campo em um dia claro">
                         <div class="card-body">
                             <h4 class="card-title">Energia Eólica</h4>
-                            <p class="card-text">A energia eólica utiliza a força do vento para gerar eletricidade, uma
-                                alternativa limpa e eficiente ao uso de combustíveis fósseis.</p>
-                            <a href="#" class="btn btn-success">Saiba Mais</a>
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#eolicaModal">Saiba Mais</button>
                         </div>
                     </div>
                 </div>
-
+    
                 <!-- Card 3 - Biomassa -->
                 <div class="col-md-4 col-12 mb-4 text-center">
                     <div class="card">
-                        <img src="images/energia/biomassa.jpg" alt="Biomassa" class="card-img-top img-fluid">
+                        <img src="images/energia/biomassa.jpg" alt="Biomassa" class="card-img-top img-fluid" alt="Imagem de troncos de madeira empilhados no chão">
                         <div class="card-body">
                             <h4 class="card-title">Biomassa</h4>
-                            <p class="card-text">A biomassa é uma fonte de energia renovável derivada de materiais
-                                orgânicos, como madeira, resíduos agrícolas e até lixo.</p>
-                            <a href="#" class="btn btn-success">Saiba Mais</a>
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#biomassaModal">Saiba Mais</button>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
+    
+    <!-- Modal de Energia Solar -->
+    <div class="modal fade" id="solarModal" tabindex="-1" aria-labelledby="solarModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="solarModalLabel">Energia Solar</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            A energia solar é uma fonte renovável que aproveita a luz do sol para gerar eletricidade. É uma solução eficiente e sustentável, que pode ser instalada em residências, empresas e grandes plantas solares.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal de Energia Eólica -->
+    <div class="modal fade" id="eolicaModal" tabindex="-1" aria-labelledby="eolicaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="eolicaModalLabel">Energia Eólica</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            A energia eólica utiliza a força do vento para gerar eletricidade. As turbinas eólicas são uma alternativa limpa e eficiente ao uso de combustíveis fósseis, contribuindo para a redução da poluição ambiental.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal de Biomassa -->
+    <div class="modal fade" id="biomassaModal" tabindex="-1" aria-labelledby="biomassaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="biomassaModalLabel">Biomassa</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            A biomassa é uma fonte renovável derivada de materiais orgânicos, como madeira, resíduos agrícolas, resíduos alimentares e até lixo. Ela pode ser convertida em energia de forma sustentável.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
     <!-- Seção: Tecnologia e Inovação -->
     <section id="tecnologia" class="p-5 bg-light">
         <div class="container">
-            <h2 class="text-center text-success">Tecnologia e Inovação</h2>
+            <h2 class="text-center text-success hero-subtitle">Tecnologia e Inovação</h2>
             <p class="text-justify mt-3">
-                Soluções como o GreenOffice integram sensores IoT para monitorar e otimizar o consumo energético em
-                tempo real. Projetos como este mostram como tecnologias avançadas podem viabilizar um futuro
-                sustentável.
+                A tecnologia e a inovação são pilares essenciais para o avanço da sustentabilidade. Através de soluções inovadoras, buscamos transformar o futuro energético, oferecendo alternativas eficientes e sustentáveis para um mundo melhor.<b> Conheça mais sobre nossa proposta:</b>
             </p>
             <video controls class="w-100 mt-3">
-                <source src="video/greenoffice.mp4" type="video/mp4">
+                <source src="video/greenoffice.mp4" type="video/mp4" alt="Vídeo da ideia e proposta de solução">
                 Seu navegador não suporta vídeo HTML5.
             </video>
         </div>
     </section>
 
     <!-- Seção: O que você pode fazer -->
-    <section id="acoes">
-        <!-- Carrossel -->
-        <section id="acoes" class="p-5 bg-white">
-            <div class="container">
-                <h2 class="text-center text-success">O que você pode fazer</h2>
-                <p class="text-justify mt-3">
-                    Reduza o consumo de energia em casa, aproveite ao máximo a luz natural e opte por produtos de
-                    empresas
-                    que investem em energia limpa. Pequenas ações individuais podem gerar grandes impactos
-                    coletivos.
-                </p>
-
-                <!-- Carrossel -->
-                <div id="carrosselAcoes" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="carousel-image-container">
-                                <img src="images/carrossel/natural.jpg" class="d-block w-100" alt="Energia Solar">
-                            </div>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="heroc-title bg-warning">Utilize Energia Solar</h5>
-                                <p class="heroc-text">Instalar painéis solares em sua casa pode reduzir o consumo de
-                                    energia elétrica e
-                                    ajudar a preservar o meio ambiente.</p>
-                            </div>
+    <section id="acoes" class="p-5 bg-white">
+        <div class="container">
+            <h2 class="text-center text-success hero-subtitle">Como você pode contribuir</h2>
+            <p class="text-justify mt-3">
+                Reduza o consumo de energia em casa, aproveite ao máximo a luz natural e opte por produtos de
+                empresas que investem em energia limpa. Pequenas ações individuais podem gerar grandes impactos
+                coletivos.
+            </p>
+    
+            <!-- Carrossel -->
+            <div id="carrosselAcoes" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Primeiro Item do Carrossel -->
+                    <div class="carousel-item active">
+                        <div class="carousel-image-container">
+                            <img src="images/carrossel/natural.jpg" class="d-block w-100" alt="Imagem de um corredor branco com iluminação e ventilação solar pela janela">
                         </div>
-                        <div class="carousel-item">
-                            <div class="carousel-image-container">
-                                <img src="images/carrossel/time.jpg" class="d-block w-100" alt="Energia Eólica">
-                            </div>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="heroc-title bg-warning">Invista em Energia Eólica</h5>
-                                <p class="heroc-text">A energia eólica é uma fonte renovável que aproveita a força do
-                                    vento, gerando
-                                    eletricidade de maneira sustentável.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-image-container">
-                                <img src="images/carrossel/coletividade.jpg" class="d-block w-100" alt="Biomassa">
-                            </div>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="heroc-title bg-warning">Consuma Biomassa</h5>
-                                <p class="heroc-text">Utilizar biomassa como fonte de energia pode ajudar a reduzir a
-                                    emissão de gases
-                                    poluentes e promover a sustentabilidade.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-image-container">
-                                <img src="images/carrossel/compartilhar.jpg" class="d-block w-100" alt="Biomassa">
-                            </div>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="heroc-title bg-warning">Consuma Biomassa</h5>
-                                <p class="heroc-text">Utilizar biomassa como fonte de energia pode ajudar a reduzir a
-                                    emissão de gases
-                                    poluentes e promover a sustentabilidade.</p>
-                            </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="heroc-title bg-warning">Utilize a natureza para o bem</h5>
+                            <p class="heroc-text">
+                                Aproveitar a luz e ventilação natural reduz o consumo de energia, criando um ambiente mais sustentável e econômico.</p>
                         </div>
                     </div>
-                    <!-- Controles do carrossel -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carrosselAcoes"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carrosselAcoes"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <!-- Segundo Item do Carrossel -->
+                    <div class="carousel-item">
+                        <div class="carousel-image-container">
+                            <img src="images/carrossel/time.jpg" class="d-block w-100" alt="Mãos diversas unidas ao centro de uma mesa, uma sobre a outra">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="heroc-title bg-warning">Invista em um futuro melhor</h5>
+                            <p class="heroc-text">Investir em projetos de sustentabilidade que buscam reduzir o consumo de energia é essencial para garantir um futuro mais eficiente e ecológico, promovendo o uso consciente dos recursos e a preservação ambiental.</p>
+                        </div>
+                    </div>
+                    <!-- Terceiro Item do Carrossel -->
+                    <div class="carousel-item">
+                        <div class="carousel-image-container">
+                            <img src="images/carrossel/coletividade.jpg" class="d-block w-100" alt="Diversos jovens, de mãos dadas de frente para o mar e de costas para a câmera">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="heroc-title bg-warning">Trabalhe em conjunto</h5>
+                            <p class="heroc-text">Trabalhar em equipe e estimular os outros a economizar energia fortalece a mentalidade de consciência ambiental. Juntos, podemos adotar práticas sustentáveis e espalhar esses valores, criando um impacto positivo e duradouro.</p>
+                        </div>
+                    </div>
+                    <!-- Quarto Item do Carrossel -->
+                    <div class="carousel-item">
+                        <div class="carousel-image-container">
+                            <img src="images/carrossel/compartilhar.jpg" class="d-block w-100" alt="Três jovens olhando para o celular e sorrindo">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="heroc-title bg-warning">Compartilhe Soluções Sustentáveis</h5>
+                            <p class="heroc-text">Divulgar e compartilhar práticas sustentáveis e soluções ecológicas
+                                ajuda a criar uma rede de conscientização e multiplicar os benefícios da transição
+                                energética em todas as esferas da sociedade.</p>
+                        </div>
+                    </div>
                 </div>
+    
+                <!-- Controles do Carrossel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrosselAcoes"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrosselAcoes"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </section>
+        </div>
+    </section>
+    
 
         <!-- Seção: Formulário de Contato -->
         <section id="contato" class="p-5 bg-light">
-            <div class="container">
-                <h2 class="text-center text-success">Contato</h2>
-                <form action="#" method="POST" class="mt-4">
+            <div class="container"> 
+                <h2 class="text-center text-success hero-subtitle">Entre em Contato</h2>
+                <p class="text-center">Fale conosco e nos dê sugestões.</p>
+                <form id="contatoForm">
                     <div class="mb-3">
-                        <label for="name" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="Seu e-mail" required>
                     </div>
                     <div class="mb-3">
-                        <label for="message" class="form-label">Mensagem</label>
-                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" rows="3" placeholder="Escreva sua mensagem" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-success w-100">Enviar</button>
+                    <button type="submit" class="btn btn-success">Enviar</button>
                 </form>
             </div>
         </section>
@@ -266,29 +308,23 @@
                     <div class="col-md-6 mb-3 mb-md-0">
                         <h5>Alunos</h5>
                         <ul class="list-unstyled">
-                            <li>Aluno 1</li>
-                            <li>Aluno 2</li>
-                            <li>Aluno 3</li>
+                            <li>Eduardo Dallabella Lima - 556803</li>
+                            <li>Heloísa Real - 554535</li>
+                            <li>Pedro Schimitz - 555758</li>
                         </ul>
                     </div>
 
                     <!-- Coluna da direita -->
                     <div class="col-md-6 text-md-end">
-                        <h5>Contato</h5>
-                        <p>Email: contato@exemplo.com</p>
-                        <p>Telefone: (00) 0000-0000</p>
-                        <div>
-                            <a href="#" class="text-white me-2">Facebook</a>
-                            <a href="#" class="text-white me-2">Twitter</a>
-                            <a href="#" class="text-white">Instagram</a>
-                        </div>
+                        <h5>Projeto</h5>
+                        <p>Finalizado em: 21/11/2024</p>
+                        <p>
+                            Este projeto foi desenvolvido como parte do trabalho do curso de Engenharia de Software. © 2024 GreenOffice </p>
+                        
                     </div>
                 </div>
             </div>
         </footer>
-
-
-
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="js/script.js"></script>
